@@ -227,7 +227,7 @@
 	taste_description = "metal"
 	reagent_state = SOLID
 	color = "#664B63"
-/*
+
 /datum/reagent/thermite
 	name = "Thermite"
 	id = "thermite"
@@ -252,7 +252,7 @@
 
 /datum/reagent/thermite/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	M.adjustFireLoss(3 * removed)
-*/
+
 /datum/reagent/space_cleaner
 	name = "Space cleaner"
 	id = "cleaner"

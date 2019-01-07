@@ -195,7 +195,7 @@
 	result = "silicate"
 	required_reagents = list("aluminum" = 1, "silicon" = 1, "acetone" = 1)
 	result_amount = 3
-/*
+
 /datum/chemical_reaction/mutagen
 	name = "Unstable mutagen"
 	id = "mutagen"
@@ -208,8 +208,8 @@
 	id = "thermite"
 	result = "thermite"
 	required_reagents = list("aluminum" = 1, "iron" = 1, "acetone" = 1)
-	result_amount = 3*/
-/*
+	result_amount = 3
+
 /datum/chemical_reaction/space_drugs
 	name = "Space Drugs"
 	id = "space_drugs"
@@ -223,7 +223,7 @@
 	result = "lube"
 	required_reagents = list("water" = 1, "silicon" = 1, "acetone" = 1)
 	result_amount = 4
-*/
+
 /datum/chemical_reaction/pacid
 	name = "Polytrinic acid"
 	id = "pacid"
@@ -274,14 +274,14 @@
 	required_reagents = list("bicaridine" = 2, "clonexadone" = 2)
 	catalysts = list("tungsten" = 5)
 	result_amount = 2
-/*
+
 /datum/chemical_reaction/virus_food
 	name = "Virus Food"
 	id = "virusfood"
 	result = "virusfood"
 	required_reagents = list("water" = 1, "milk" = 1)
 	result_amount = 5
-*/
+
 /datum/chemical_reaction/leporazine
 	name = "Leporazine"
 	id = "leporazine"
@@ -361,7 +361,7 @@
 	result = "ryetalyn"
 	required_reagents = list("arithrazine" = 1, "carbon" = 1)
 	result_amount = 2
-/*
+
 /datum/chemical_reaction/cryoxadone
 	name = "Cryoxadone"
 	id = "cryoxadone"
@@ -376,7 +376,7 @@
 	required_reagents = list("cryoxadone" = 1, "sodium" = 1, "tungsten" = 0.1)
 	catalysts = list("tungsten" = 5)
 	result_amount = 2
-*/
+
 /datum/chemical_reaction/penicillin
 	name = "penicillin"
 	id = "penicillin"
@@ -426,7 +426,7 @@
 	result = "potassium_chlorophoride"
 	required_reagents = list("potassium_chloride" = 1, "tungsten" = 1, "chloralhydrate" = 1)
 	result_amount = 4
-/*
+
 /datum/chemical_reaction/zombiepowder
 	name = "Zombie Powder"
 	id = "zombiepowder"
@@ -440,7 +440,7 @@
 	result = "mindbreaker"
 	required_reagents = list("silicon" = 1, "hydrazine" = 1, "anti_toxin" = 1)
 	result_amount = 3
-*/
+
 /datum/chemical_reaction/lipozine
 	name = "Lipozine"
 	id = "Lipozine"
@@ -468,14 +468,14 @@
 	result = "cleaner"
 	required_reagents = list("ammonia" = 1, "water" = 1)
 	result_amount = 2
-/*
+
 /datum/chemical_reaction/plantbgone
 	name = "Plant-B-Gone"
 	id = "plantbgone"
 	result = "plantbgone"
 	required_reagents = list("toxin" = 1, "water" = 4)
 	result_amount = 5
-*/
+
 /datum/chemical_reaction/foaming_agent
 	name = "Foaming Agent"
 	id = "foaming_agent"
@@ -550,7 +550,7 @@
 	result_amount = 3
 
 /* Solidification */
-/*
+/
 /datum/chemical_reaction/plastication
 	name = "Plastic"
 	id = "solidplastic"
@@ -560,9 +560,9 @@
 
 /datum/chemical_reaction/plastication/on_reaction(var/datum/reagents/holder, var/created_volume)
 	new /obj/item/stack/material/plastic(get_turf(holder.my_atom), created_volume)
-	return*/
+	return
 
-/* Grenade reactions */
+// Grenade reactions
 
 /datum/chemical_reaction/explosion_potassium
 	name = "Explosion"
@@ -584,7 +584,7 @@
 			e.amount *= 1.5
 	e.start()
 	holder.clear_reagents()
-/*
+
 /datum/chemical_reaction/flash_powder
 	name = "Flash powder"
 	id = "flash_powder"
@@ -631,7 +631,7 @@
 	empulse(location, round(created_volume / 24), round(created_volume / 14), TRUE)
 	holder.clear_reagents()
 	return
-*/
+
 /datum/chemical_reaction/nitroglycerin
 	name = "Nitroglycerin"
 	id = "nitroglycerin"
@@ -657,7 +657,7 @@
 	name = "Napalm"
 	id = "napalm"
 	result = null
-	required_reagents = list("aluminum" = 1, "tungsten" = 1, "sacid" = 1 )
+	required_reagents = list("aluminum" = 1, "tungsten" = 1, "acid" = 1 )
 	result_amount = TRUE
 
 /datum/chemical_reaction/napalm/on_reaction(var/datum/reagents/holder, var/created_volume)
@@ -741,7 +741,7 @@
 	s.set_up(created_volume, location, holder, 2)
 	s.start()
 	return
-*/
+
 /* Paint */
 
 /datum/chemical_reaction/red_paint
@@ -1699,4 +1699,4 @@
 	id = "luminol"
 	result = "luminol"
 	required_reagents = list("hydrogen" = 2, "carbon" = 2, "ammonia" = 2)
-	result_amount = 6
+	result_amount = 6 */

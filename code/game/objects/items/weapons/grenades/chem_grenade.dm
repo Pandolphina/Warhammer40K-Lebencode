@@ -301,3 +301,50 @@
 		beakers += B2
 		icon_state = initial(icon_state) +"_locked"
 
+/obj/item/weapon/grenade/chem_grenade/melta
+    name = "melta grenade"
+    desc = "An incredibly volatile grenade capable of burning through metal with ease." //Thermite and napalm death - Pandolphina
+    path = 1
+    stage = 2
+    icon_state = "melta"
+
+    New()
+        ..()
+        var/obj/item/weapon/reagent_containers/glass/beaker/B1 = new(src)
+        var/obj/item/weapon/reagent_containers/glass/beaker/B2 = new(src)
+
+        B1.reagents.add_reagent(/datum/reagent/aluminum, 20)
+        B1.reagents.add_reagent(/datum/reagent/acetone, 10)
+        B2.reagents.add_reagent(/datum/reagent/tungsten, 10)
+        B2.reagents.add_reagent(/datum/reagent/acid, 10)
+        B2.reagents.add_reagent(/datum/reagent/iron, 10)
+        B2.reagents.add_reagent(/datum/reagent/fuel, 30)
+        B1.reagents.add_reagent(/datum/reagent/fuel,30)
+
+        detonator = new/obj/item/assembly_holder/timer_igniter(src)
+
+        beakers += B1
+        beakers += B2
+        icon_state = initial(icon_state) +"_locked"
+
+/obj/item/weapon/grenade/chem_grenade/melta
+    name = "melta grenade"
+    desc = "A powerful anti-armor grenade, designed to be thrown at vehicles or armored targets."
+    path = 1
+    stage = 2
+    icon_state = "krak"
+
+    New()
+        ..()
+        var/obj/item/weapon/reagent_containers/glass/beaker/B1 = new(src)
+        var/obj/item/weapon/reagent_containers/glass/beaker/B2 = new(src)
+
+        B1.reagents.add_reagent(/datum/reagent/acid, 30)
+        B1.reagents.add_reagent(/datum/reagent/acid/polyacid, 30)
+        B2.reagents.add_reagent(/datum/reagent/glycerol, 60)
+
+        detonator = new/obj/item/assembly_holder/timer_igniter(src)
+
+        beakers += B1
+        beakers += B2
+        icon_state = initial(icon_state) +"_locked"

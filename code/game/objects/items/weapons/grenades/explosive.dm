@@ -81,3 +81,12 @@
 /obj/item/weapon/grenade/explosive/frag/on_explosion(var/turf/O)
 	if (explosion_size)
 		explosion(O, 1, round(explosion_size/2), explosion_size, round(explosion_size/2), FALSE)
+
+
+/obj/item/weapon/grenade/explosive/imperium
+    name = "fragmentation grenade"
+    desc = "A fragmentation grenade given to Guardsmen of the Imperial Guard" //standard grenade, still useful
+    icon_state = "imperium"
+
+    num_fragments = 80
+    explosion_size = 3

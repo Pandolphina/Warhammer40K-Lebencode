@@ -40,3 +40,10 @@
 		visible_message("<span class = 'warning'>\The [src] goes off!</span>")
 		active = TRUE
 		prime()
+
+
+/obj/item/weapon/grenade/smokebomb/imperium
+	desc = "A smoke grenade designed to disorient enemies and allow for undetected movement."
+	name = "smoke grenade"
+	icon_state = "smoke"
+	det_time = 30

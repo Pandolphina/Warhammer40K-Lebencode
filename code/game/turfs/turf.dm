@@ -52,7 +52,7 @@ var/list/interior_areas = list(/area/prishtina/houses,
 //	var/has_resources
 //	var/list/resources
 
-//	var/thermite = FALSE
+	var/thermite = FALSE
 //	oxygen = MOLES_O2STANDARD
 //	nitrogen = MOLES_N2STANDARD
 	var/to_be_destroyed = FALSE //Used for fire, if a melting temperature was reached, it will be destroyed

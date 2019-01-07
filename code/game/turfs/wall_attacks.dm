@@ -129,7 +129,7 @@
 			return
 
 	//THERMITE related stuff. Calls thermitemelt() which handles melting walls and the relevant effects
-/*	if (thermite)
+	if (thermite)
 		if ( istype(W, /obj/item/weapon/weldingtool) )
 			var/obj/item/weapon/weldingtool/WT = W
 			if ( WT.remove_fuel(0,user) )
@@ -137,7 +137,7 @@
 				return
 
 
-		else */
+		else
 
 	var/turf/T = user.loc	//get user's location for delay checks
 
